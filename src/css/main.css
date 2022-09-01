@@ -1,6 +1,4 @@
-* {
-    margin: 0;
-    padding: 0;
+body {
     font-family: 'Roboto';
 }
 
@@ -44,4 +42,20 @@ p {
     font-weight: 300;
     font-size: 16px;
     line-height: 24px;
+}
+
+button {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 16px 40px;
+    gap: 10px;
+    width: 128px;
+    height: 48px;
+    left: 830px;
+    top: 338px;
+    background: #E4C1AE;
+    border-radius: 32px;
+    color: #FFFFFF;
+    cursor: pointer;
 }
