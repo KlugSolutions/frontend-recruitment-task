@@ -1,18 +1,47 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto';
 }
 
-main { 
+main {
     position: relative;
     width: 1440px;
     height: 960px;
     background: #FFFFFF;
 }
+
 .img-hero {
     position: absolute;
     width: 505px;
     height: 330px;
     left: 230px;
     top: 96px;
+}
+
+.content {
+    position: absolute;
+    width: 380px;
+    height: 250px;
+    left: 830px;
+    top: 136px;
+    font-style: normal;
+    left: calc(50% - 380px/2 + 300px);
+    color: #121212;
+}
+
+h1 {
+    height: 50px;
+    top: calc(50% - 50px/2 - 319px);
+    font-weight: 700;
+    font-size: 42px;
+    line-height: 50px;
+}
+
+p {
+    height: 96px;
+    top: calc(50% - 96px/2 - 222px);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
 }
