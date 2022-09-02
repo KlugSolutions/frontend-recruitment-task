@@ -1,4 +1,6 @@
-body {
+* {
+    margin: 0;
+    padding: 0;
     font-family: 'Roboto';
 }
 
@@ -6,7 +8,6 @@ main {
     position: relative;
     width: 1440px;
     height: 960px;
-    background: #FFFFFF;
 }
 
 .img-hero {
@@ -17,7 +18,7 @@ main {
     top: 96px;
 }
 
-.content {
+article {
     position: absolute;
     width: 380px;
     height: 250px;
@@ -29,6 +30,7 @@ main {
 }
 
 h1 {
+    margin: 0px;
     height: 50px;
     top: calc(50% - 50px/2 - 319px);
     font-weight: 700;
@@ -37,6 +39,7 @@ h1 {
 }
 
 p {
+    margin-top: 24px;
     height: 96px;
     top: calc(50% - 96px/2 - 222px);
     font-weight: 300;
@@ -45,6 +48,7 @@ p {
 }
 
 button {
+    margin-top: 32px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -56,6 +60,18 @@ button {
     top: 338px;
     background: #E4C1AE;
     border-radius: 32px;
-    color: #FFFFFF;
+    border: none;
     cursor: pointer;
+}
+
+span {
+    width: 48px;
+    height: 16px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    color: #FFFFFF;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
 }
