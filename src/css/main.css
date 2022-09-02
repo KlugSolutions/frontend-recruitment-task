@@ -135,3 +135,12 @@ h2 {
     top: 415px;
     cursor: pointer;
 }
+
+/* Reset Button */
+#reset {
+    position: absolute;
+    display: none;
+    left: 1000px;
+    top: 500px;
+    background-color: darkred;
+}
