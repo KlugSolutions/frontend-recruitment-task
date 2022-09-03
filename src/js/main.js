@@ -14,7 +14,7 @@ const reset = document.getElementById('reset');
 myBtn.onclick = () => {      // Open popup function
     popup.style.display = "block"; // show popup
     counter++; // each click +1
-    count.innerHTML = counter; // return value into html
+    count.innerHTML = counter + ' times'; // return value into html
     (counter > 5) ? reset.style.display = 'block' : reset.style.display = 'none'; // if counter is bigger 5 then show reset button
 }
 
@@ -26,7 +26,7 @@ img.onclick = () => {      // Close popup function
 
 reset.onclick = () => {     // Reset count value
     counter = 0;        // Value after click reset button 
-    count.innerHTML = counter; // Put value into html
+    count.innerHTML = counter + ' times'; // Put value into html
 }
 
 
