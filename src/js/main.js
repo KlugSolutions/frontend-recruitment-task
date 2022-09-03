@@ -24,8 +24,9 @@ img.onclick = () => {      // Close popup function
 
 // Functions for reset to initial value (0)
 
-reset.onclick = () => {
-    count.innerHTML = 0;
+reset.onclick = () => {     // Reset count value
+    counter = 0;        // Value after click reset button 
+    count.innerHTML = counter; // Put value into html
 }
 
 
