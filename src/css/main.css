@@ -142,11 +142,18 @@ h2 {
 #reset {
     position: absolute;
     display: none;
-    left: 1000px;
-    top: 500px;
-    background-color: darkgrey;
+    height: 24px;
+    margin: 0;
+    padding: 0;
+    left: 700px;
+    top: 505px;
+    color: #121212;
+    font-size: 16px;
+    font-weight: 700;
+    background-color:#E4C1AE;
 }
 
+/* Count value + 'times' */
 #count {
     color: #121212;
     font-weight: 600;
