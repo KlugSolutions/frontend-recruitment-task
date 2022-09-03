@@ -139,8 +139,12 @@ h2 {
 /* Reset Button */
 #reset {
     position: absolute;
-    display: none;
+    display: block;
     left: 1000px;
     top: 500px;
     background-color: darkred;
+}
+
+#count {
+    color: #121212;
 }
