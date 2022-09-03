@@ -131,6 +131,10 @@ h2 {
 /* Close Button */
 .close {
     position: absolute;
+    margin: 0;
+    padding: 0;
+    gap: 0;
+    background-color: white;
     width: 24px;
     height: 24px;
     left: 1116px;
