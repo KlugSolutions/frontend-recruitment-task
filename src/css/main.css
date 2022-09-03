@@ -140,6 +140,7 @@ h2 {
     left: 1116px;
     top: 415px;
     cursor: pointer;
+    border-radius: 0%;
 }
 
 /* Reset Button */
