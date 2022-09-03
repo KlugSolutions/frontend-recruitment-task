@@ -7,16 +7,27 @@ const img = document.getElementsByClassName("close")[0];    // Get element 'clos
 const count = document.getElementById('count'); //Get element for counting
 let counter = 0; // default value of counting (initial value)
 
+// Variables fot reset
+const reset = document.getElementById('reset');
+
 // Functions
-myBtn.onclick = function () {      // Open popup function
+myBtn.onclick = () => {      // Open popup function
     popup.style.display = "block"; // show popup
     counter++; // each click +1
     count.innerHTML = counter; // return value into html
+    (counter > 5) ? reset.style.display = 'block' : reset.style.display = 'none'; // if counter is bigger 5 then show reset button
 }
 
-img.onclick = function () {      // Close popup function
+img.onclick = () => {      // Close popup function
     popup.style.display = "none"; // hidden popup
 }
+
+// Functions for reset to initial value (0)
+
+reset.onclick = () => {
+    count.innerHTML = 0;
+}
+
 
 
 
