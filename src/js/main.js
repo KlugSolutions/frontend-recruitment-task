@@ -1,38 +1,42 @@
-// Variables for open and close popup
-const popup = document.getElementById('myPopup');   // Get element 'Popup'
-const myBtn = document.getElementById('myBtn');   // Get element 'button'
-const img = document.getElementsByClassName('close')[0];    // Get element 'close'
+// Variables 
+const popup = document.getElementById('myPopup')   // Get element 'Popup'
+const myBtn = document.getElementById('myBtn')   // Get element 'button'
+const xicon = document.getElementsByClassName('close')[0]    // Get element 'close'
+const count = document.getElementById('count') //Get element for counting
+const reset = document.getElementById('reset') // Get element for reset to initial value (0)
+let counter = 0;
 
-// Variables for counting
-const count = document.getElementById('count'); //Get element for counting
-let counter = 0; // default value of counting (initial value)
 
-// Variables fot reset
-const reset = document.getElementById('reset');
 
 // Functions
-myBtn.onclick = () => {      // Open popup function
-    popup.style.display = 'block'; // show popup
-    counter++; // each click +1
-    count.innerHTML = counter + ' times'; // return value into html
-    (counter > 5) ? reset.style.display = 'block' : reset.style.display = 'none'; // if counter is bigger 5 then show reset button
+
+/* Show popup, chceck LS and count. 
+Check the number, if it is bigger than 5, 
+show the reset button. */
+myBtn.onclick = () => {
+    popup.style.display = 'block';
+
+    (localStorage.clickcount) ?
+        localStorage.clickcount = Number(localStorage.clickcount) + 1
+        : localStorage.clickcount = counter++
+
+    count.innerHTML = localStorage.clickcount;
+
+    (count.innerHTML > 5) ? reset.style.display = 'block' : reset.style.display = 'none'
 }
 
-// Closing functions
-img.onclick = () => {      // Close popup function
-    popup.style.display = 'none'; // hidden popup
+// Function for reset to initial value (0)
+reset.onclick = () => {
+    localStorage.clickcount = 0
+    count.innerHTML = localStorage.clickcount
 }
 
-window.onclick = (event) => {      // Close popup when anywhere in window clicked
-    (event.target == popup) ? popup.style.display = 'none' : '' // hidden popup
+// Close popup by xicon
+xicon.onclick = () => {
+    popup.style.display = 'none'
 }
 
-// Functions for reset to initial value (0)
-reset.onclick = () => {     // Reset count value
-    counter = 0;        // Value after click reset button 
-    count.innerHTML = counter + ' times'; // Put value into html
+// Close popup by click anywhere
+onclick = (event) => {
+    (event.target == popup) ? popup.style.display = 'none' : ''
 }
-
-
-
-
