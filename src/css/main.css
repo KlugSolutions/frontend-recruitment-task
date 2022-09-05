@@ -279,6 +279,7 @@ h2 {
     .popup-content button {
         position: static;
         background-color: whitesmoke;
+        display: block;
     }
 
     .popup-content #reset {
