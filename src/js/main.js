@@ -29,6 +29,7 @@ myBtn.onclick = () => {
 reset.onclick = () => {
     localStorage.clickcount = 0
     count.innerHTML = localStorage.clickcount
+    reset.style.display = 'none'
 }
 
 // Close popup by xicon
