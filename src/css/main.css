@@ -4,10 +4,9 @@
     font-family: 'Roboto';
 }
 
-main {
+.content {
     position: relative;
     width: 1440px;
-    height: 960px;
 }
 
 .img-hero {
@@ -22,7 +21,6 @@ article {
     position: absolute;
     width: 380px;
     height: 250px;
-    left: 830px;
     top: 136px;
     font-style: normal;
     left: calc(50% - 380px/2 + 300px);
@@ -48,7 +46,7 @@ p {
 }
 
 button {
-    margin-top: 32px;
+    position: absolute;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
@@ -76,6 +74,85 @@ span {
     order: 0;
     flex-grow: 0;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    article {
+        width: 200px;
+        height: 300px;
+    }
+
+    button {
+        width: 64px;
+        height: 24px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    span {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    .content {
+        position: static;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .img-hero {
+        position: static;
+        all: unset;
+        display: flex;
+        justify-content: center;
+        width: auto;
+        height: auto;
+        margin-top: 25px;
+    }
+
+    img {
+        width: 50%;
+        height: auto;
+    }
+
+    .article {
+        display: flex;
+        justify-content: center;
+        margin-top: 30px;
+    }
+
+    article {
+        all: unset;
+        width: 380px;
+        text-align: center;
+    }
+
+    .btn {
+        top: unset;
+        left: unset;
+
+    }
+
+    .button {
+        display: flex;
+        justify-content: center;
+        margin: 20px;
+    }
+
+}
+
 
 /* Popup */
 
@@ -155,7 +232,7 @@ h2 {
     color: #121212;
     font-size: 16px;
     font-weight: 700;
-    background-color:#E4C1AE;
+    background-color: #E4C1AE;
 }
 
 /* Count value */

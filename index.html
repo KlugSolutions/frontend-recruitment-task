@@ -4,7 +4,7 @@
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <!-- Changed web title -->
     <title>Tomasz Kluge - Recruitment task</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.png">
@@ -18,21 +18,27 @@
 
     <!-- Add main and img -->
     <main>
-        <img src="images/image.png" alt="beach image" class="img-hero">
+        <div class="content">
+            <div class="img-hero">
+                <img src="images/image.png" alt="beach image">
+            </div>
 
-        <!-- Add content -->
-        <article>
-            <h1>Lorem Ipsum</h1>
-            <p>Infinitely scalable, feature-rich and cloud-native data management
-                and protection for modern and legacy infrastructures
-                and SaaS platforms, managed via a single app with
-                no hardware required.
-            </p>
-
+            <!-- Article -->
+            <div class="article">
+                <article>
+                    <h1>Lorem Ipsum</h1>
+                    <p>Infinitely scalable, feature-rich and cloud-native data management
+                        and protection for modern and legacy infrastructures
+                        and SaaS platforms, managed via a single app with
+                        no hardware required.
+                    </p>
+                </article>
+            </div>
             <!-- Button -->
-            <button id="myBtn" class="btn"><span>Button</span></button>
-
-        </article>
+            <div class="button">
+                <button id="myBtn" class="btn"><span>Button</span></button>
+            </div>
+        </div>
 
         <!-- Popup -->
         <div id="myPopup" class="popup">
@@ -40,7 +46,7 @@
                 <h2>Alert!</h2>
                 <p>You have clicked <span id="count">X</span><span class="times"> times</span> to related button.</p>
             </div>
-            <button class="close"><img src="images/x-icon.png" alt="close popup"></button>
+            <button class="close"><img src="images/x-icon.png" alt="close popup icon"></button>
             <button id="reset">Reset</button>
         </div>
 

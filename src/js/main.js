@@ -4,7 +4,7 @@ const myBtn = document.getElementById('myBtn')   // Get element 'button'
 const xicon = document.getElementsByClassName('close')[0]    // Get element 'close'
 const count = document.getElementById('count') //Get element for counting
 const reset = document.getElementById('reset') // Get element for reset to initial value (0)
-let counter = 0;
+let counter = 0
 
 
 
